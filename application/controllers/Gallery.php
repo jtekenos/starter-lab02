@@ -6,9 +6,10 @@
  * and open the template in the editor.
  */
 
-class Gallery extends CI_Controller {
+class Gallery extends Application {
     public function index()
 	{
-		$this->load->view('gallery');
+		$this->data['pagebody'] = 'gallery';
+		$this->render();
 	}
 }
